@@ -1,15 +1,45 @@
 Erstelle in der Komponente "List" folgenden Array:
 
   data = [
-    {todo_: "HTML", done: true},
-    {todo_: "CSS", done: true},
-    {todo_: "JavaScript", done: true},
-    {todo_: "Angular", done: false}
+    {task: "HTML", done: true},
+    {task: "CSS", done: true},
+    {task: "JavaScript", done: true},
+    {task: "Angular", done: false}
   ];
 
- todo: entferne überall den Unterstrich "_"
+Es soll mittels ngFor Direktive für jedes Item im Array der (Test-)Pragraph erzeugt werden.
+Der Inhalt des (Test-)Pragraph soll mittels Interpolation an den "task" des jeweiligen Items im Array gebunden sein.
 
- Es soll mittels ngFor Direktive für jedes Item im Array der (Test-)Pragraph erzeugt werden.
- Der Inhalt des (Test-)Pragraph soll mittels Interpolation an das todo_ des jeweiligen Items im Array gebunden sein.
+Die Methode die der addButton bisher ausgeführt hat soll nun die Anzahl der "tasks" aktualisieren deren "done" false ist.
+Der addButton soll nun data ein weiteres Item hinzufügen. Und danach die vorher genannte Methode aufrufen.
 
+Zusatz-Aufgabe:
+Sobald der Button geaddet hat soll der Inhalt des Inputs geleert werden.
+
+Bonus-Aufgabe:
+Wenn das Input leer ist bzw. nur Whitespaces wie z.B. " " darin sind, soll data kein Item hinzugefügt werden.
+
+Extra-Bonus-Aufgabe:
+finde heraus wie man einen Konstruktor macht und rufe die Methode die offene Todos zählt im Konstruktor auf.
+
+Extra-Bonus-Aufgabe mit Sternchen:
+Jetzt ersetzen wir den (Test-)Paragraph durch was Besseres.
+Erstelle die Komponente "Todo-Item":
+- deleteButton links
+- (Test-)text zentral
+- checkbox rechts
+- maximaler Abstand zueinander
+- Rahmen drumherum
+- ein bisschen abstand vom Content zu Rahmen
+ersetze due (Test-)Paragraph dur den Todo-Item-Tag
+den du gerade erzeugt hast
+
+Extra-Bonus-Aufgabe mit 2 Sternchen:
+gib der Todo-Item-Komponente die Attribute:
+- task: string
+- done: boolean
+Die hintegrundfarbe des templates soll via Style-Binding an "done" gekoppelt sein. z.B.:
+done == true -> grün, done == false -> rot
+
+Binde die CheckBox mit Two-Way-Binding an done.
 

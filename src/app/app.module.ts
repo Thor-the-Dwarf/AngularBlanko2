@@ -5,12 +5,16 @@ import { AppComponent } from './app.component';
 import { DirektivenComponent } from './struktur-direktiven/direktiven.component';
 import {FormsModule} from "@angular/forms";
 import { BindingComponent } from './binding-direktiven/binding.component';
+import { ParentComponent } from './Komponenten_Kommunikation/parent/parent.component';
+import { ChildComponent } from './Komponenten_Kommunikation/child/child.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DirektivenComponent,
-    BindingComponent
+    BindingComponent,
+    ParentComponent,
+    ChildComponent
   ],
     imports: [
         BrowserModule,
