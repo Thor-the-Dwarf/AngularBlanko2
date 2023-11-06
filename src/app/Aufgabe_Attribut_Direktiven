@@ -1,8 +1,0 @@
-Jetzt ersetzen wir den (Test-)Paragraph durch was Besseres.
-Erstelle die Komponente "Task":
-- deleteButton links
-- (Test-)text zentral
-- checkbox rechts
-- maximaler Abstand zueinander
-- Rahmen drumherum
-- ein bisschen abstand vom Content zu Rahmen

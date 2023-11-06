@@ -1,0 +1,12 @@
+<div>
+  <input [(ngModel)]="newItem" type="text" placeholder="Neues Item">
+  <br>
+  <button (click)="addItem()">Hinzufügen</button>
+  <button (click)="saveItems()">Speichern</button>
+  <button (click)="loadItems()">Laden</button>
+  <button (click)="cleartems()">clear</button>
+
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+</div>

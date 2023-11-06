@@ -7,6 +7,7 @@ import {FormsModule} from "@angular/forms";
 import { BindingComponent } from './1_binding-direktiven/binding.component';
 import { ParentComponent } from './3_Komponenten_Kommunikation/parent/parent.component';
 import { ChildComponent } from './3_Komponenten_Kommunikation/child/child.component';
+import { SpeichernComponent } from './4_speichern/speichern.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ChildComponent } from './3_Komponenten_Kommunikation/child/child.compon
     DirektivenComponent,
     BindingComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    SpeichernComponent
   ],
     imports: [
         BrowserModule,
