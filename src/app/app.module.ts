@@ -8,6 +8,7 @@ import { BindingComponent } from './1_binding-direktiven/binding.component';
 import { ParentComponent } from './3_Komponenten_Kommunikation/parent/parent.component';
 import { ChildComponent } from './3_Komponenten_Kommunikation/child/child.component';
 import { SpeichernComponent } from './4_speichern/speichern.component';
+import { InjectionComponent } from './5_injection/injection.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SpeichernComponent } from './4_speichern/speichern.component';
     BindingComponent,
     ParentComponent,
     ChildComponent,
-    SpeichernComponent
+    SpeichernComponent,
+    InjectionComponent
   ],
     imports: [
         BrowserModule,
