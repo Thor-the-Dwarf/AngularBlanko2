@@ -1,0 +1,26 @@
+Kommunikation
+
+Die Attribute Empfangen:
+Mach das die "List" die Attribute "task" und "done" an die Todo-Items sendet.
+Versehe die Attribute des Todo-Items mit den @Input-Dekorator.
+
+Chekcbox soll senden:
+Mach das die Checkbox reaktiv "done" an "List.Component" sendet. Via @Output und Eventemitter.
+
+Während du dabei bist die Methode zu schreiben die das empfangene "done" verarbeitet wirst feststellen das es unmöglich
+ist, wenn man nicht weiß wer der Sender ist.
+Deswegen benutze Angulars "Index Tracking"um jedem Item einen Index zu geben etwa so:
+
+<app-todo-item *ngFor="let item of data; let i = index"...
+  ... (checkBoxClicked)="receiveDone($event, i)",,, </app-todo-item>
+
+vergiss nicht nach dem Prozess den Counter zu aktualisieren.
+
+DeleteButton soll funktionieren:
+Wiederhole den Prozess den du gerade mit der Checkbox gemacht hast mit dem DeleteButton, nur nicht reaktiv sondern
+event-driven via Event-Binding.
+Tipp: (click) und (mousedown) sind EventListener. Genau wie der den du selbst erstellt hast (checkBoxClicked)
+Du musst also nichts senden nur den Eventlistener auslösen
+heißer Tipp: ... = new EventEmitter<void>();
+
+
