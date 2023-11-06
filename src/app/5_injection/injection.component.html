@@ -1,0 +1,13 @@
+<!-- speichern.component.html -->
+<div>
+  <input [(ngModel)]="newItem" type="text" placeholder="Neues Item">
+  <br>
+  <button (click)="addItem()">Hinzufügen</button>
+  <button (click)="saveItems()">Speichern</button>
+  <button (click)="loadItems()">Laden</button>
+  <button (click)="clearItems()">Clear</button>
+
+  <ul>
+    <li *ngFor="let item of storageService.getItems()">{{ item }}</li>
+  </ul>
+</div>
