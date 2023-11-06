@@ -31,14 +31,14 @@ Erstelle die Komponente "Todo-Item":
 - maximaler Abstand zueinander
 - Rahmen drumherum
 - ein bisschen abstand vom Content zu Rahmen
-ersetze due (Test-)Paragraph dur den Todo-Item-Tag
+ersetze den (Test-)Paragraph in der list.component.html durch den Todo-Item-Tag
 den du gerade erzeugt hast
 
 Extra-Bonus-Aufgabe mit 2 Sternchen:
 gib der Todo-Item-Komponente die Attribute:
 - task: string
 - done: boolean
-Die hintegrundfarbe des templates soll via Style-Binding an "done" gekoppelt sein. z.B.:
+Die Hintergrundfarbe des Templates soll via Style-Binding an "done" gekoppelt sein. z.B.:
 done == true -> grün, done == false -> rot
 
 Binde die CheckBox mit Two-Way-Binding an done.
