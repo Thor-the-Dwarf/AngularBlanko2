@@ -1,0 +1,12 @@
+Erstelle einen Component namens "List".
+Dieser ListComponent soll das einzige Tag in der app.component.html sein.
+Er soll eine Überschrift haben, etwa "Meine Todos".
+darunter ein Text: "offene Todos: {{counter}}".
+darunter soll ein input vom typ "text", daneben ein Button mit der Aufschrifft "add" sein.
+darunter ein (Test-)Paragraf.
+Das Input soll durch Two-Way Binding, der (test-)Paragraf-Text durch Interpolation an
+dasselbe Attribut in der TypeScript-Klasse gebunden.
+Der Button hat ein Click-Event das den counter hochzählt.
+Style den Komponent so das er oben Zentral auf der Webseite gezeigt wird;
+nutze dafür auch die styles.css oder app.component.css.
+Farben, Schriftgrößen usw. darfst du stylen wie du willst

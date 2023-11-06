@@ -1,0 +1,17 @@
+<!-- ngIf Direktive: Element wird nur gerendert, wenn 'bedingung' wahr ist -->
+<h3>*ngIf</h3>
+<div *ngIf  ="bedingung">Das erscheint nur, wenn 'bedingung' wahr ist.</div>
+
+<!-- ngFor Direktive: Listenelement für jedes Item in 'items' erstellen -->
+<h3>*ngFor</h3>
+<ul>
+  <li *ngFor  ="let item of items">{{ item }}</li>
+</ul>
+
+<!-- ngSwitch Direktive: Verschiedene Fälle abhängig vom Wert von 'auswahl' -->
+<h3>[ngSwitch]</h3>
+ <div [ngSwitch]  ="auswahl">
+  <div *ngSwitchCase  ="'ersterFall'">Erster Fall ist wahr</div>
+  <div *ngSwitchCase="'zweiterFall'">Zweiter Fall ist wahr</div>
+  <div *ngSwitchDefault  >Keiner der Fälle ist wahr</div>
+</div>

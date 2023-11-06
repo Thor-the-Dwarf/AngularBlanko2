@@ -1,0 +1,15 @@
+Erstelle in der Komponente "List" folgenden Array:
+
+  data = [
+    {todo_: "HTML", done: true},
+    {todo_: "CSS", done: true},
+    {todo_: "JavaScript", done: true},
+    {todo_: "Angular", done: false}
+  ];
+
+ todo: entferne überall den Unterstrich "_"
+
+ Es soll mittels ngFor Direktive für jedes Item im Array der (Test-)Pragraph erzeugt werden.
+ Der Inhalt des (Test-)Pragraph soll mittels Interpolation an das todo_ des jeweiligen Items im Array gebunden sein.
+
+

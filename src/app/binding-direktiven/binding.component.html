@@ -1,0 +1,46 @@
+<!-- Dateiname: binding-direktiven.component.html -->
+
+<!-- Interpolation -->
+<h3>Interpolation</h3>
+<p>Hallo {{ text }} {{nummer}} Welt!</p>
+
+<!-- Property Binding -->
+<h3>Property Binding</h3>
+<input [type]="inputType"
+       [value]="inputValue"
+       [placeholder]="placeholderText"
+       [maxLength]="maxInputLength"
+       [size]="inputSize">
+
+<!-- Event Binding -->
+<h3>Event Binding</h3>
+<div>
+  <div style="width: 100px; height: 100px; border: 1px solid black;"
+       (click)="showMessage('Click Event')"
+       (dblclick)="showMessage('Double Click Event')"
+       (mousedown)="showMessage('Mousedown Event')"
+       (mousemove)="showMessage('Mouse Move Event')"
+       (mouseleave)="showMessage('Mouse Leave Event')">
+  </div>
+  <label>{{eventBinding}}</label>
+</div>
+
+<!-- Two-Way Binding -->
+<!--[(ngModel)] benötigt import im Modul-->
+<h3>Two-Way Binding</h3>
+<label>Two Way</label><input [(ngModel)]="twoWayData"/> <br>
+<label>One Way</label><input [value]="twoWayData"/>
+
+<!-- Style Binding -->
+<h3>Style Binding</h3>
+<p [style.background-color]="twoWayData.length > 10 ? 'yellow' : 'white'">Style ändert sich 11 Zeichen</p>
+
+<!-- Class Binding -->
+<h3>Class Binding</h3>
+<style>
+  .klasse{
+    background-color: midnightblue;
+    color: white;
+  }
+</style>
+<p [class.klasse]="twoWayData.length > 10">Klasse ändert sich 11 Zeichen</p>
