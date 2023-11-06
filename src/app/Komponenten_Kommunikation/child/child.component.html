@@ -1,0 +1,11 @@
+<div>
+  <h3>Child</h3>
+  <p>reaktive via (ngModelChange)</p>
+  <input [(ngModel)]="messageToSend" (ngModelChange)="sendMessage()" type="text">
+  <br>
+  <p>event-driven</p>
+  <input [(ngModel)]="messageToSend" type="text">
+  <button (click)="sendMessage()">Senden</button>
+  <br>
+  <label>Empfangen: {{ messageFromParent }}</label>
+</div>

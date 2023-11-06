@@ -26,7 +26,7 @@ Extra-Bonus-Aufgabe mit Sternchen:
 Jetzt ersetzen wir den (Test-)Paragraph durch was Besseres.
 Erstelle die Komponente "Todo-Item":
 - deleteButton links
-- (Test-)text zentral
+- Paragraph (mit Test-Text) zentral
 - checkbox rechts
 - maximaler Abstand zueinander
 - Rahmen drumherum
@@ -36,10 +36,11 @@ den du gerade erzeugt hast. Behalte aber das *ngFor bei
 
 Extra-Bonus-Aufgabe mit 2 Sternchen:
 gib der Todo-Item-Komponente die Attribute:
-- task: string
-- done: boolean
+- task: string = "programmieren"
+- done: boolean = false
+Der Inhalt des Paragraphen soll via Interpolation an "task" gebunden sein.
+Binde die CheckBox mit Two-Way-Binding an "done".
 Die Hintergrundfarbe des Templates soll via Style-Binding an "done" gekoppelt sein. z.B.:
 done == true -> grün, done == false -> rot
 
-Binde die CheckBox mit Two-Way-Binding an done.
 

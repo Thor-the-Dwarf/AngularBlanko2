@@ -1,0 +1,7 @@
+div{
+  border: 2px solid black; /* Rahmen um das Todo-Item */
+  border-radius: 8px;
+  margin: 8px;
+  padding: 8px;
+}
+
