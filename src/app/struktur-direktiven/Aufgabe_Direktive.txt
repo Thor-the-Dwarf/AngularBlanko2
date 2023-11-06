@@ -32,7 +32,7 @@ Erstelle die Komponente "Todo-Item":
 - Rahmen drumherum
 - ein bisschen abstand vom Content zu Rahmen
 ersetze den (Test-)Paragraph in der list.component.html durch den Todo-Item-Tag
-den du gerade erzeugt hast
+den du gerade erzeugt hast. Behalte aber das *ngFor bei
 
 Extra-Bonus-Aufgabe mit 2 Sternchen:
 gib der Todo-Item-Komponente die Attribute:
